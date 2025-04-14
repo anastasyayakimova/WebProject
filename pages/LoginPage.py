@@ -8,7 +8,7 @@ class LoginPageLocators:
     QR_LOGIN_BUTTON = (By.XPATH, "//*[@data-l='t,get_qr']")
     QR_CODE_BUTTON = (By.XPATH, "//*[@data-l='t,qr_tab']")
     DOESNT_WORK_BUTTON = (By.XPATH, "//*[@data-l='t,restore']")
-    REGISTRATION_BUTTON = (By.XPATH, "//*[@class='button-pro __sec mb-3x __wide']")
+    REGISTRATION_BUTTON = (By.XPATH, "//div[@class='external-oauth-login-footer']//a[@data-l='t,register']")
     VK_BUTTON = (By.XPATH, "//*[@class='i ic social-icon __s __vk_id']")
     MAIL_BUTTON = (By.XPATH, "//*[@class='i ic social-icon __s __mailru']")
     YANDEX_BUTTON = (By.XPATH, "//*[@class='i ic social-icon __s __yandex']")
