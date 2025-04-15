@@ -1,7 +1,7 @@
 from core.BaseTest import browser
 from pages.BasePage import BasePageHelper
 from pages.HelpPage import HelpPageHelper, HelpPageLocator
-from pages.ReklamnyiKabinetPage import ReklamnyiKabinetHelper
+from pages.ReklamnyiKabinetPage import AdvertisingOfficeHelper
 import allure
 
 BASE_URL = "https://ok.ru/help"
@@ -11,5 +11,5 @@ BASE_URL = "https://ok.ru/help"
 def test_help_test(browser):
     BasePageHelper(browser).get_url(BASE_URL)
     HelpPage = HelpPageHelper(browser)
-    HelpPage.scrollToitem(HelpPageLocator.REKLAMNYI_KABINET)
-    ReklamnyiKabinetHelper(browser)
+    HelpPage.scrollToitem(HelpPageLocator.ADVERTISING_OFFICE)
+    AdvertisingOfficeHelper(browser)
