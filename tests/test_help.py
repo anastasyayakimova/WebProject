@@ -1,7 +1,7 @@
 from core.BaseTest import browser
 from pages.BasePage import BasePageHelper
 from pages.HelpPage import HelpPageHelper, HelpPageLocator
-from pages.ReklamnyiKabinetPage import AdvertisingOfficeHelper
+from pages.AdvertisingOfficePage import AdvertisingOfficeHelper
 import allure
 
 BASE_URL = "https://ok.ru/help"
