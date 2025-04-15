@@ -1,5 +1,5 @@
 from core.BaseTest import browser
-from pages.BasePage import BasePage
+from pages.BasePage import BasePageHelper
 from pages.LoginPage import LoginPageHelper
 from pages.RecoveryPage import RecoveryPageHelper
 import allure
@@ -8,7 +8,7 @@ BASE_URL = "https://ok.ru/"
 @allure.suite("Проверка восстановления пользователя")
 @allure.title("Проверка перехода к восстановлению после несколкьких неудачных попыток авторизации")
 def test_go_to_recovery_after_fails_login(browser):
-    BasePage(browser).get_url(BASE_URL)
+    BasePageHelper(browser).get_url(BASE_URL)
     LoginPage = LoginPageHelper(browser)
     LoginPage.send_keys_login("test")
 
